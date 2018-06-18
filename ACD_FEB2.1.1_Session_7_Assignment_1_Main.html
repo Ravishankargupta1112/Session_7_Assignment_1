@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>counter</title>
+		<style>
+			div{
+				background-color:lightblue;
+				color:white;
+				padding:20px;
+				text-align:center;
+				font-size:42px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<button type="button" onclick="counter()">Click to get counter</button>
+		<script>
+			var count=0;
+			var mycounter=function()
+			{
+				count+=1;
+				return count;
+			};
+
+			function counter(){
+				document.getElementById("div1").innerHTML = mycounter();
+			}
+		</script>
+	</body>
+</html>
